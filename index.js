@@ -185,11 +185,11 @@ app.get("/itens", (req, res) => {
 });
 
 // endpoint [get] READ one
-app.get("/itens/:id", (req, res) => {
-  const id = req.params.id;
+app.get("/itens/:nome", (req, res) => {
+  const nome = req.params.nome;
 
   const item = itens.data.filter(function (a) {
-    return a.codigo === id;
+    return a.nome === nome;
   });
   res.send(item);
 });
