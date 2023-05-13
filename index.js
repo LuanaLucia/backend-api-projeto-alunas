@@ -6,8 +6,6 @@ app.use(cors());
   // Sinalizar uso de Json
 app.use(express.json());
 
-// Sinalizar uso de Json
-app.use(express.json())
 
 app.get("/", (req, res) => {
   res.send("Hello Word!");
