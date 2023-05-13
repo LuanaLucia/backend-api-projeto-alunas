@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const cors = require("cors");
+app.use(cors());
+  // Sinalizar uso de Json
+app.use(express.json());
 
 // Sinalizar uso de Json
 app.use(express.json())
